@@ -1,0 +1,19 @@
+.presetantion__container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  h1 {
+    color: var(--text-color-primary);
+    font-size: var(--font-size-giant);
+  }
+
+  p {
+    max-width: var(--width-extra-small);
+    color: var(--text-color-paragraph);
+    font-weight: var(--font-weight-small);
+    font-family: Lato;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+}
