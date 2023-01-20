@@ -1,0 +1,11 @@
+.navBar__container {
+  border: 1px solid var(--text-color-primary);
+  width: fit-content;
+  padding: 20px 16px;
+}
+
+.navBar__items {
+  display: flex;
+  flex-direction: column;
+  gap: 116px;
+}

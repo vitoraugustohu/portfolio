@@ -1,7 +1,8 @@
-import './styles/global.scss';
+import Home from './pages/Home'
+import './styles/global.scss'
 
 const App = () => {
-  return <h1>Oi</h1>;
-};
+  return <Home/>
+}
 
-export default App;
+export default App

@@ -1,7 +1,7 @@
-import Presentation from '../../components/Presentation'
+import SocialLinks from '../../components/SocialLinks'
 
 const Home = () => {
-  return <Presentation />
+  return <h1>Oi</h1>
 }
 
 export default Home
