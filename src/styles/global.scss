@@ -10,20 +10,21 @@
   --text-color-primary: #ffffff;
   --text-color-paragraph: #d9d9d9;
 
-  --text-weight-normal: 400;
-  --text-weight-medium: 500;
+  --background: #161616;
 
-  --background: #161626;
-
-  --family-font: Lato, sans-serif;
+  --font-primary: Lato, sans-serif;
 
   --font-size-normal: 16px;
-  --font-size-giant: 32px; 
+  --font-size-giant: 32px;
+
+  --font-weight-small: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
 
   --width-normal: 1266px;
   --width-medium: 900px;
   --width-small: 600px;
-
+  --width-extra-small: 445px;
 }
 
 :where(html) {
@@ -37,14 +38,23 @@
 :where(body) {
   min-block-size: 100%;
   background: var(--background);
+  color: var(--text-color-primary);
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-normal);
 }
 
 :where(h1, h2, h3, h4, h5, h6, strong, b) {
-  font-weight: 600;
-  font-family: var(--family-bold);
+  font-weight: var(--font-weight-normal);
 }
 
-:where(a[href], area, button, label[for], summary, [tabindex]:not([tabindex*='-'])) {
+:where(
+    a[href],
+    area,
+    button,
+    label[for],
+    summary,
+    [tabindex]:not([tabindex*='-'])
+  ) {
   cursor: pointer;
 }
 
