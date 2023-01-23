@@ -1,0 +1,21 @@
+@mixin numberSectionStyle($bg-color, $color, $border-width: 1px) {
+  background-color: $bg-color;
+  color: $color;
+  border-color: #E4E4E4;
+  border-style: solid;
+  border-width: 1px 1px 1px $border-width;
+  padding: 6px 4px;
+}
+
+.SectionNumber__container {
+  display: flex;
+  width: fit-content;
+  font-size: var(--font-size-giant);
+
+  span:first-child {
+    @include numberSectionStyle(#e4e4e4, var(--background));
+  }
+  span {
+    @include numberSectionStyle(var(--background), #e4e4e4, 0px);
+  }
+}
