@@ -1,0 +1,20 @@
+.home__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.section__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.presentation__wrapper {
+  display: flex;
+  gap: calc(50vw/2);
+  margin-top: 80px;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+}
